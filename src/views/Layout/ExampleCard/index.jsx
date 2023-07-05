@@ -1,7 +1,13 @@
 import { Component } from 'react'
 import { Badge, Card } from 'antd'
+import { exampleList } from '../../../service/api'
 
 class Index extends Component {
+  componentDidMount () {
+    exampleList().then(res => {
+    })
+  }
+
   render () {
     return (
       <div>
